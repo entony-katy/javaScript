@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>primeiros passos em DOM</title>
+    <style>
+        body {
+            background-color: rgb(24, 24, 220);
+            color: white;
+            font: 18px arial;
+            /*precisa terminar o comando todo do shorthand para essa porra funcionar !!! */
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Iniciando com DOM</h1>
+    <p>aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM em <i>JavaScript</i></strong> </p>
+    <div id="msg">click em mim</div>
+    <div>teste</div>
+    <script>
+        var titulo = document.querySelector('h1')
+        titulo.style.color = 'green'
+
+        var p1 = document.querySelectorAll('p')[0]
+        p1.style.background = 'red'
+        
+        var p2 = document.querySelectorAll('p')[1]
+        p2.innerText = 'estou aprendendo a usar o <strong>DOM</strong> no JavaScript.'
+//percebisse que quando usamos as tags dentro do innerTEXT, as tag NÃO funcionam.
+    
+        var mensagem = document.querySelector('div#msg')
+        mensagem.style.display = 'none'
+
+        var msg = document.getElementsByTagName('div')[1]
+        document.write(msg.innerText)
+        
+
+    </script>
+</body>
+</html>
