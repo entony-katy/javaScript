@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos DOM</title>
+    <style>
+        div {
+            height: 200px;
+            width: 200px;
+            background-color: green;
+            color: white;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+            interaja...
+    </div>
+    <script>
+        var a = document.getElementById('area') // convertendo o objeto para variavel
+        a.addEventListener('click', clicar) // criando um ouvidor para a ação 
+        a.addEventListener('mouseenter', entrou)
+        a.addEventListener('mouseout', sair)
+        function clicar(){
+            //bloco de ações
+            a.innerText = 'cliquei'
+            a.style.background = 'red'
+        }
+
+        function entrou() {
+            a.style.background = 'blue'
+            a.innerText = 'entrei'
+        }
+
+        function sair() {
+            a.style.background = 'green'
+            a.innerText = 'saí'
+        }
+    </script>
+</body>
+</html>
