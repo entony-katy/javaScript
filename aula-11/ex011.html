@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testando o país</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>coloque a sua nacionalidade</h1>
+    <p>qual o seu país de origem? 
+    <input type="text" name="txt" id="itxt"> 
+    <input type="button" value="verificar" id="botao">
+    </p>
+    <div id="res">
+
+    </div>
+
+    <script>
+//pegando a variavel para fazer o evento de "click"
+        var botao = document.getElementById('botao')
+        botao.addEventListener('click', conferir)
+
+//a ação do evento "click"
+        function conferir() {
+            var txt = document.getElementById('itxt')
+            var res = document.getElementById('res')
+            var nasc = String(txt.value)
+//exibição
+            res.innerHTML = `vc nasceu no(a) <strong>${nasc}</strong>`
+            if (nasc != 'brasil') {
+                res.innerHTML += "<p>você é estrangeiro</p>"
+            } else {
+                res.innerHTML += '<p>você é brasileiro</p>'
+            }
+        }
+    </script>
+</body>
+</html>
