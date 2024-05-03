@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de idade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de idade</h1>
+    </header>
+    <section id="container">
+        <div>
+<!-- campo para pegar a data de nascimento -->
+           <form>
+            <p> <label for="txtIdade">Ano de Nascimento</label>
+                <input type="text" name="txtIdade" id="txtIdade">
+            </p>
+<!-- campo para pegar o sexo -->
+            <p>sexo:
+                <input type="radio" name="tsex" id="mas" checked>
+                <label for="mas">masculino</label>
+                <input type="radio" name="tsex" id="fem">
+                <label for="fem">feminino</label>
+            </p>
+<!--botao para fazer o chamado para a ação-->
+           <input type="button" value="Verificador" onclick="Carregar()">
+           </form>
+        </div>
+<!-- local onde ira aparecer o resultado -->
+        <div>
+            <p id="res">Preencha o campo para ver o resultado...</p>
+            <img id="imagem" src="" alt="">
+        </div>
+    </section>
+<!-- Roda-pé -->
+    <footer>
+        <p><a href="https://www.instagram.com/entony_katy/">@entony_katy</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
