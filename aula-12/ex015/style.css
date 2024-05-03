@@ -20,7 +20,7 @@ header h1 {
 }
 
 section#container {
-    width: 450px;
+    max-width: 450px;
     background-color: white;
     margin: auto;
     margin-top: 20px;
