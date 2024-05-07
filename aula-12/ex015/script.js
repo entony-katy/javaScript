@@ -11,6 +11,7 @@ function Carregar(){
     var ano = agora.getFullYear()
     var fano = Number(txtIdade.value)
     var idade = ano - fano
+    var teste = document.getElementById('teste')
 //-----------------------------------------
     var genero = '' //variavel vazia
     var Uma = '' //para mudar de 'um homem' para 'uma mulher'
@@ -51,6 +52,15 @@ function Carregar(){
 //exibindo o texto e a imagem
     res.innerHTML = `Detectamos ${Uma} ${genero} de ${idade} anos`
     res.appendChild(img)
+    
+
+//
+
+//TESTANDO ADICIOANAR E MUDAR UMA TAG CRIADA PELO JS
+    var p = document.createElement('p')
+    p.setAttribute('id', 'paragr')
+    var p = 'ola, isso é mais um teste'
+    teste.innerHTML = p
     
     
 }
