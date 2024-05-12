@@ -10,22 +10,14 @@
     <header>
         <h1>tabuada</h1>
     </header>
-    <section id="container">
-        <div>
-            <p> <label for="inumero">numero: </label>
-                <input type="number" name="inumero" id="txtn">  
-                <input type="button" value="calcular" onclick="Calcular()">
-
-            <p> 
-                <input type="text" name="dados" id="dados" list="teste">
-                <datalist id="teste">
-                    <option value="teste">teste</option>
-                </datalist>
-            </p>
-            </p>
+    <section>
+        <div> Número: <input type="number" name="num" id="txtn">
+           <input type="button" value="Gerar Tabuada" onclick="calcular()">
         </div>
         <div id="res">
-            
+            <select name="dados" id="tabu" size="11">
+               <option value="">adicione o valor acima</option>
+            </select>
         </div>
     </section>
     <footer>
