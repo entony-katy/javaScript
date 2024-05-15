@@ -32,7 +32,7 @@ function Carregar(){
             img.src = 'imagens/idoso-mas.png'
         }
     } else {
-        genero = 'mulher'
+        genero = 'gada'
         Uma = 'uma'
         if (idade < 12 ) {
             img.src = 'imagens/crianca-fem.png'

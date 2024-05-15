@@ -4,7 +4,7 @@ function carregar() {
     var foto = document.getElementById('foto')
 //pegando a hora do dispositivo
    var agora = new Date()
-   var hora = agora.getHours()
+    var hora = agora.getHours()
 
 //criando as funções
     if (hora >= 0 && hora < 12 ) {
