@@ -28,6 +28,7 @@ section#container {
 
 #flista {
     width: 170px;
+    min-height: 100px;
 }
 
 #teste {
