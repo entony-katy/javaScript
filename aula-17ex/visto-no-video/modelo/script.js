@@ -5,7 +5,7 @@ let valores = []
 
 //verificando se o valor estar dentro do que pedimos
 function IsNumero(n) {
-    if (Number(n) >= 1 && Number(n) <= 1000 ) {
+    if (n >= 1 && n <= 100 ) {
         return true
     } else {
         return false
@@ -14,7 +14,7 @@ function IsNumero(n) {
 
 //verificando se o valor ja foi adicionado no vetor
 function InLista (n, l) {
-    if (l.indexOf(Number(n)) == -1) {
+    if (l.indexOf(Number(n)) == -1) { //SE O VALOR PROCURADO NÃO FOR ENCONTRADO
         return true
     } else {
         return false 
@@ -28,7 +28,7 @@ function Adicionar () {
 
 //criando o elemento que ira ficar dentro da lista e dando o seu conteudo.
         var itens = document.createElement('option')
-        itens.innerHTML += `o valor ${Number(num.value)} foi adicionado.`
+        itens.innerHTML += `o valor ${num.value} foi adicionado.`
 
 //adicionando a tag criada dentro do select.
         lista.appendChild(itens)
@@ -62,7 +62,7 @@ function Finalizar(){
     let  media = soma / tot
 
     res.innerHTML += `<p>Ao todo temos ${tot} cadastro.</p>`
-    res.innerHTML += `<p>O maior numero inserido é ${maior}.</p> `
+    res.innerHTML += `<p>O maior valor inserido foi o ${maior}.</p> `
     res.innerHTML += `<p>O menor valor inserido foi o ${menor}.</p>`
     res.innerHTML += `<p>A soma dos valores é igual a ${soma}.</p>`
     res.innerHTML += `<p>A media dos numeros é igual a ${media.toFixed(2).replace('.' , ',')}</p>`
